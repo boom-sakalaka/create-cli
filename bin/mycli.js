@@ -47,6 +47,9 @@ program
   .description('create a project ')
   .action(function () {
     green('👽 👽 👽 ' + '欢迎使用mycli,轻松构建react ts项目～🎉🎉🎉');
+    inquirer.prompt(question).then(answer => {
+      console.log('answer=', answer);
+    });
   });
 
 /* mycli start 运行项目 */
