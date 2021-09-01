@@ -48,7 +48,10 @@ program
   .action(function () {
     green('👽 👽 👽 ' + '欢迎使用mycli,轻松构建react ts项目～🎉🎉🎉');
     inquirer.prompt(question).then(answer => {
-      console.log('answer=', answer);
+      if (answer.conf) {
+        /* 创建文件 */
+        create(answer);
+      }
     });
   });
 
