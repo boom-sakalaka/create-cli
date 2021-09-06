@@ -2,7 +2,7 @@
 var program = require('commander');
 const utils = require('../utils/index');
 var inquirer = require('inquirer');
-
+const create = require('../src/create');
 const { green, yellow, blue } = utils;
 
 // program.option('-d, --debug', 'output extra debugging').option('-s, --small', 'small pizza size');
