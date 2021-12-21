@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+program.usage('<command>');
+
+program.version(require('../package').version);
+
+program.command('add').description('add a new template');
+
+program.command('delete').description('delete a template');
+
+program.command('list').description('List the templateList');
+
+program.command('init').description('init a project');
+
+program.parse(process.argv);
